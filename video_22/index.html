@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css sizing units</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            font-size: 12px;
+        }
+        .box{
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 240px; */
+            width: 80vw;
+            height: 10vh;
+            margin: auto;
+            background-color: aqua;
+        }
+        .container{
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 240px; */
+            width: 80vw;
+            /* height: 80vh; */
+            min-height: 80vh;
+            margin:  23px auto;
+            /* font-size: 18px; */
+            background-color: aqua;
+        }
+        .container > div {
+            font-size: 2em;
+            border: 2px solid red;
+            width: 50%;
+
+        }
+        .container > div > div {
+            font-size: 2em;
+            border: 2px solid blue;
+            width: 50%;
+
+        }
+        .mycont{
+            box-sizing: border-box;
+            border: 2px solid black;
+            margin:  23px auto;
+            color: tomato;
+            font-size:22px ;
+            /* width: 100vmin; */
+            width: 80vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        This is a box
+    
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam voluptatibus at maxime ipsam nesciunt veritatis incidunt, voluptate, fuga delectus rem magni, exercitationem illum distinctio. Illo veniam illum totam id soluta, ratione, eaque veritatis nemo reprehenderit natus libero suscipit ipsum temporibus repudiandae eos fuga, nam nesciunt maiores laborum quas explicabo. Doloribus et facere alias soluta eligendi numquam!
+
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut magnam placeat accusantium iusto. Unde ullam explicabo et molestias dignissimos deleniti quia sit quos cupiditate quas sapiente itaque aspernatur, nostrum officia veritatis, doloremque assumenda error!
+
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab vitae explicabo tenetur temporibus corrupti natus praesentium. Magni natus iure commodi ad quam eius culpa laboriosam facere! Odio architecto dolor quod tempore voluptas sed sapiente?
+            </div>
+        </div>
+        <!-- Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam dolorem iure animi velit veniam aspernatur beatae, exercitationem recusandae nostrum, quidem ea, voluptatum fugiat laborum? Ullam saepe iste voluptate animi quo  -->
+    </div>
+    <div class="mycont">
+        I am cont 
+    </div>
+</body>
+</html>
