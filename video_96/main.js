@@ -13,14 +13,15 @@ app.get("/", (req, res) => {
   const todo = new Todo({
     title: "Hey First Todo",
     desc: "Description of the todo",
-    isDone: false,days:Math.floor(Math.random()*45+5*Math.random())
+    isDone: false,
+    days:Math.floor(Math.random()*45+5*Math.random())
   });
   todo.save();
   res.send("Hello World!");
 });
 
-app.get("/a",(req, res) => {
-  let todo =  Todo.findOne({})
+app.get("/a",async(req, res) => {
+  let todo =await Todo.findOne({})
   console.log(todo)
   res.json({title: todo.title, desc: todo.desc})
 })
